@@ -1,0 +1,17 @@
+on:
+  push
+
+name: ci
+
+jobs:
+  ci:
+    name: ci
+    runs-on: windows-latest
+    steps:
+      - shell: pwsh
+        run: |
+          docker --version
+          docker-compose --version
+          
+          get-command docker
+          get-command docker-compose
