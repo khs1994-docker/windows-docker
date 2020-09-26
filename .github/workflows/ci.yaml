@@ -16,4 +16,4 @@ jobs:
           get-command docker
           get-command docker-compose
           
-          ls C:\Program Files\Docker
+          ls 'C:\Program Files\Docker'
